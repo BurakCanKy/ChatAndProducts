@@ -4,6 +4,7 @@ body {
   padding: 0;
 }
 
+
 .container {
   border-radius: 100px;
   max-width: 800px;
@@ -13,35 +14,40 @@ body {
 
 #chat-wrap {
   border-radius: 20px;
-  margin:6%;
+  margin: 6%;
   padding: 5%;
   background-color: #e5e5e5;
 }
-.input{
+
+.input {
   background-color: transparent;
   border: 1px solid grey;
   border-radius: 3px;
 }
-.productContainer{
+
+.productContainer {
   background-color: rgb(223, 223, 223);
   border-radius: 20px 0px 20px 0px;
   margin: 10%;
   padding: 5%;
 }
-.productHeader{
+
+.productHeader {
   text-align: center;
 }
-.productSend{
+
+.productSend {
   background-color: rgb(223, 223, 223);
   border-radius: 20px 0px 20px 0px;
   margin: 3%;
   padding: 3%;
 }
-.chatBottom{
+
+.chatBottom {
   margin-top: 2%;
-  display:flex; 
-  align-items:center;
-  justify-content:center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #chat-window {
@@ -93,12 +99,14 @@ select {
 }
 
 /* Genel Başlık Stili */
-h1, h2 {
+h1,
+h2 {
   color: #333;
 }
 
 /* Ürün ve Kategori Listesi Stili */
-.product-list, .category-list {
+.product-list,
+.category-list {
   margin-top: 20px;
 }
 
