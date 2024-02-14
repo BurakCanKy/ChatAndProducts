@@ -5,12 +5,18 @@ const http = require("http");
 const cors = require('cors');
 
 const app = express();
-const port = 3000;
-
+const server = http.createServer(app);
 app.use(cors());
 
-const server = http.createServer(app);
-const io = socket(server);
+const port = 3000;
+
+
+const io = socket(server, {
+    cors: {
+        origin: "*",
+        methods: ["GET", "POST"]
+    }
+});
 
 io.on('connection', (socket) => {
     console.log(socket.id);
@@ -28,7 +34,7 @@ const client = new Client({
     user: 'postgres',
     host: 'localhost',
     database: 'nodejsuyg',
-    password: '123456',
+    password: '123',
     port: 5432,
 });
 
